@@ -1,10 +1,10 @@
 {% set name = "perl-dbi" %}
-{% set version = "1.647" %}
-{% set sha256 = "0df16af8e5b3225a68b7b592ab531004ddb35a9682b50300ce50174ad867d9aa" %}
+{% set version = "1.649" %}
+{% set sha256 = "98897cdd06adae70e5516042e47ca08d623db2139fc58fd95cde208adf85c697" %}
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/DBI-{{ version }}.tgz
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
   script:
     - perl Makefile.PL INSTALLDIRS=vendor NO_PERLLOCAL=1 NO_PACKLIST=1
     - make -j"${CPU_COUNT}"
