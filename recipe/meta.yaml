@@ -1,6 +1,6 @@
 {% set name = "perl-dbi" %}
-{% set version = "1.649" %}
-{% set sha256 = "98897cdd06adae70e5516042e47ca08d623db2139fc58fd95cde208adf85c697" %}
+{% set version = "1.650" %}
+{% set sha256 = "a807b817c1cfb0fe6ecccff1d9ddeb293c317d518f5ab2007dfb9d3bccdbcf83" %}
 
 package:
   name: {{ name }}
